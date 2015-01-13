@@ -158,8 +158,7 @@ Like matrices but can contain different classes.
 ```{r, echo=T}
 df <- data.frame(colOne = 1:4, colTwo = c("small", "large", "small", "medium"))
 df
-nrow(df)
-ncol(df)
+nrow(df); ncol(df)
 ```
 
 Names
@@ -184,6 +183,4 @@ is.nan(k)
 ```
 
 
-Basic operations
-========================================================
 
