@@ -113,12 +113,18 @@ Lists
 A list can contain objects with different classes
 
 ```{r, eval=TRUE, echo=TRUE}
-a <- list("h", 1, 2)  ##this list contains a character and numeric class objects
+a <- list("h", 1, 2)
 ```
 
 For lists, [[ ]] is used to select any single element, whereas [ ] returns a list of the selected elements.
+
+
+Lists
+========================================================
 ```{r, eval=TRUE}
-class(a); class(a[[1]]); class(a[[2]])
+class(a) 
+class(a[[1]])
+class(a[[2]])
 ```
 
 
@@ -137,8 +143,16 @@ l <- cbind(a = 1:3, pi = pi)
 
 ```
 
+Matrices
+========================================================
+
 Try class(), attributes(), dim() functions on these matrices
 
+```{r, eval=T}
+class(m)
+class(l)
+
+```
 
 Factors
 ========================================================
@@ -158,7 +172,20 @@ Like matrices but can contain different classes.
 ```{r, echo=T}
 df <- data.frame(colOne = 1:4, colTwo = c("small", "large", "small", "medium"))
 df
+<<<<<<< Updated upstream
 nrow(df); ncol(df)
+=======
+```
+
+Dataframes
+========================================================
+nrow() and ncol() can be used to find out the number of rows and columns of the dataframe
+
+```{r, echo=TRUE}
+nrow(df); ncol(df)
+
+dim(df) #alternatively
+>>>>>>> Stashed changes
 ```
 
 Names
@@ -183,4 +210,7 @@ is.nan(k)
 ```
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes

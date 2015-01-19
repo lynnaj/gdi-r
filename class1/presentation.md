@@ -1,7 +1,7 @@
 R programming
 ========================================================
 author: Lynna Jirpongopas
-date: Wed Jan  7 20:45:14 2015
+date: Sun Jan 18 16:50:41 2015
 
 What is R?
 ========================================================
@@ -123,21 +123,33 @@ A list can contain objects with different classes
 
 
 ```r
-a <- list("h", 1, 2)  ##this list contains a character and numeric class objects
+a <- list("h", 1, 2)
 ```
 
 For lists, [[ ]] is used to select any single element, whereas [ ] returns a list of the selected elements.
 
+
+Lists
+========================================================
+
 ```r
-class(a); class(a[[1]]); class(a[[2]])
+class(a) 
 ```
 
 ```
 [1] "list"
 ```
 
+```r
+class(a[[1]])
+```
+
 ```
 [1] "character"
+```
+
+```r
+class(a[[2]])
 ```
 
 ```
@@ -169,8 +181,27 @@ m <- matrix(1:6, nrow=2, ncol=3)
 l <- cbind(a = 1:3, pi = pi)
 ```
 
+Matrices
+========================================================
+
 Try class(), attributes(), dim() functions on these matrices
 
+
+```r
+class(m)
+```
+
+```
+[1] "matrix"
+```
+
+```r
+class(l)
+```
+
+```
+[1] "matrix"
+```
 
 Factors
 ========================================================
@@ -207,20 +238,29 @@ df
 4      4 medium
 ```
 
+Dataframes
+========================================================
+nrow() and ncol() can be used to find out the number of rows and columns of the dataframe
+
+
 ```r
-nrow(df)
+nrow(df); ncol(df)
 ```
 
 ```
 [1] 4
 ```
 
+```
+[1] 2
+```
+
 ```r
-ncol(df)
+dim(df) #alternatively
 ```
 
 ```
-[1] 2
+[1] 4 2
 ```
 
 Names
@@ -261,7 +301,4 @@ is.nan(k)
 [1] FALSE FALSE FALSE FALSE
 ```
 
-
-Basic operations
-========================================================
 
