@@ -172,9 +172,6 @@ Like matrices but can contain different classes.
 ```{r, echo=T}
 df <- data.frame(colOne = 1:4, colTwo = c("small", "large", "small", "medium"))
 df
-<<<<<<< Updated upstream
-nrow(df); ncol(df)
-=======
 ```
 
 Dataframes
@@ -185,7 +182,6 @@ nrow() and ncol() can be used to find out the number of rows and columns of the 
 nrow(df); ncol(df)
 
 dim(df) #alternatively
->>>>>>> Stashed changes
 ```
 
 Names
@@ -210,7 +206,3 @@ is.nan(k)
 ```
 
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
