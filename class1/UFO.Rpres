@@ -6,7 +6,7 @@ date: `r date()`
 
 
 ***
-![UFO 1 goes here](UFO1.jpg)
+![UFO 1 goes here](images/UFO1.jpg)
 
 
 
@@ -104,7 +104,7 @@ There are several methods:
 Load a csv table, method 3
 ========================================================
 ```{r}
-nasdaqData <- read.csv("C:/Users/lynnaj/Desktop/UFO/NASDAQOMX-NDX.csv")
+nasdaqData <- read.csv("~/Github/gdi-r/class1/datasets/NASDAQOMX-NDX.csv")
 ```
 
 
@@ -112,7 +112,9 @@ read.csv() arguments
 ========================================================
 There are bunch of arguments (ie. options)!
 Here is my advice for best practice:
+
 ```{r}
+setwd("~/Github/gdi-r/class1/datasets")
 opecData <- read.csv("OPEC-ORB.csv", header = T, sep = ",", stringsAsFactors = F) #loading csv file
 
 opecData <- read.csv("OPEC-ORB.txt", header = T, sep = "\t", stringsAsFactors = F) #loading txt file
@@ -196,7 +198,7 @@ http://blog.modeanalytics.com/five-public-dataset/
 
 Load our UFO data!
 ========================================================
-![UFO 2 goes here](UFO2.png)
+![UFO 2 goes here](images/UFO2.png)
 
 
 Zoo package
@@ -205,13 +207,14 @@ install zoo package
 so that we can use as.Date()
 
 ***
-![funny zoo pic goes here](zoo.jpg)
+![funny zoo pic goes here](images/zoo.jpg)
 
 
 
 Dates
 ========================================================
 ```{r, echo=F}
+setwd("~/Github/gdi-r/class1/datasets")
 ufoData <- read.csv("UFOsighting.csv", header = T, sep = ",", stringsAsFactors = F)
 ```
 
@@ -348,7 +351,7 @@ Check out ufoDataByMonth table!
 
 Know the answer?! 
 ========================================================
-![UFO 2 goes here](UFO2.jpg)
+![UFO 2 goes here](images/UFO2.jpg)
 
 We're only interested in the row called, Mean.
 ```{r}
@@ -369,7 +372,7 @@ colnames(ufoDataByMonth)[ufoDataByMonth["Median",] == maxMedian]
 How was it?!
 ========================================================
 
-![UFO 3 goes here](UFO3.jpg)
+![UFO 3 goes here](images/UFO3.jpg)
 
 more light shed on the mystery of R ?
 
