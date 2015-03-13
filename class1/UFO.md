@@ -205,7 +205,7 @@ http://blog.modeanalytics.com/five-public-dataset/
 
 Load our UFO data!
 ========================================================
-![UFO 2 goes here](images/UFO2.png)
+![UFO 2 goes here](images/UFO2.PNG)
 
 
 Zoo package
