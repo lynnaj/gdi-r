@@ -1,7 +1,7 @@
 UFO Sightings Analysis with R
 ========================================================
 author: Lynna Jirpongopas
-date: Thu Mar 12 19:43:39 2015
+date: Mon Apr 27 19:44:37 2015
 
 
 
@@ -205,16 +205,7 @@ http://blog.modeanalytics.com/five-public-dataset/
 
 Load our UFO data!
 ========================================================
-![UFO 2 goes here](images/UFO2.PNG)
-
-
-Zoo package
-========================================================
-install zoo package
-so that we can use as.Date()
-
-***
-![funny zoo pic goes here](images/zoo.jpg)
+![UFO 2 goes here](images/UFO2.png)
 
 
 
@@ -224,7 +215,6 @@ Dates
 
 
 ```r
-library(zoo)
 ufoData$month <- as.Date(ufoData$month, format = "%Y-%m-%d")
 ```
 
@@ -264,11 +254,21 @@ plot(ufoData1900to2014$month,
 ![plot of chunk unnamed-chunk-12](UFO-figure/unnamed-chunk-12.png) 
 
 
+Zoo package
+========================================================
+install zoo package
+so that we can plot the data as a line graph!
+
+***
+![funny zoo pic goes here](images/zoo.jpg)
+
+
 Plot using zoo package
 ========================================================
 Instead of scatterplot, you want a line graph
 
 ```r
+library(zoo)
 z <- zoo(ufoData$sightings, ufoData$month)
 plot(z)
 ```
